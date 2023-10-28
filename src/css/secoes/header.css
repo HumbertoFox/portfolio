@@ -51,23 +51,31 @@
     gap: 10px;
 }
 
-.header nav ul li a {
+.header nav ul li {
+    display: flex;
+    text-align: center;
     text-transform: capitalize;
     color: var(--cor-branca);
     font-size: 2rem;
     font-weight: 500;
-    padding: 10px 20px;
     border-radius: 10px;
     letter-spacing: 1px;
+    padding: 1px;
     user-select: none;
-    background: linear-gradient(90deg, #00F, #0F0, #F00, #FFF);
+    background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
 	background-size: 400% 400%;
     animation: gradient 4s linear infinite;
     transition: .3s;
 }
 
+.header nav ul li a {
+    border-radius: 10px 0 10px 0;
+    padding: 5px 20px;
+    background-color: var(--cor-fundo-cinza-escuro);
+}
+
 .header nav ul li a:hover {
-    background: var(--cor-primaria);
+    color: var(--cor-primaria);
 }
 
 .header .menu{
@@ -139,42 +147,34 @@
 
 @media(max-width: 900px) {
     .header .menu {
-        display: block; 
+        display: flex;
     }
 
     /* pega todos os itens que após o input e que sao irmaos dele */
     .header nav input:checked ~ ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .header nav {
         position: absolute;
         top: 30px;
-        right: 20px;  
+        right: 20px;
         z-index: 1;
     }
 
    .header nav ul {
-        display: none;        
-        background-color: var(--cor-fundo-escuro);        
+        display: none;
+        background-color: var(--cor-fundo-escuro);
         padding: 20px;
         border-radius: 10px;
         opacity: .8;
     }
     
-    .header nav li a {
-        color: var(--cor-branca);
-        text-align: center;                
+    .header nav ul li a {
+        width: 100%;                
         padding: 20px;
-        display: block;
-    }
-
-    .header nav li:last-child a {
-        margin-top: 10px;
-    }
-
-    .header nav li:first-child a {
-        margin-bottom: 10px;
+        background-color: var(--cor-fundo-escuro);
     }
 }
 
