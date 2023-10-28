@@ -11,7 +11,7 @@
 }
 
 .sobre-mim .imagem-sobre-mim img {
-    border: 10px solid transparent;
+    border: 5px solid var(--cor-primaria);
     border-radius: 5px;
 }
 
@@ -45,12 +45,6 @@
     .sobre-mim .informacoes-sobre-mim {  
         padding: 0 var(--mobile-padding);
         text-align: center;
-    }
-
-    .sobre-mim .imagem-sobre-mim .inner-shadow {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
     }
 }
 

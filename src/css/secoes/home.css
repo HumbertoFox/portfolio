@@ -7,6 +7,10 @@
     letter-spacing: 2px;
 }
 
+.home .texto-home .redes-sociais {
+    justify-content: start;
+}
+
 .home .texto-home, .home .img-home {
     flex: 0 0 50%;
     /* ocupa 50% do tamanho e não faz grow nem shrink */
@@ -21,8 +25,13 @@
         text-align: center;
         padding: 0 var(--mobile-padding);
     }
+
     .home .img-home {
         margin-top: 50px;
+    }
+
+    .home .texto-home .redes-sociais {
+        justify-content: center;
     }
 }
 
@@ -35,7 +44,7 @@
 .home .img-home .img-box img {
     width: 100%;
     border-radius: 50%;
-    border: 10px solid transparent;
+    border: 5px solid var(--cor-primaria);
 }
 
 .home .texto-home p {
