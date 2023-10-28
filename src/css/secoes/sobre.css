@@ -1,18 +1,50 @@
-/* SOBRE MIM */
 .sobre-mim .imagem-sobre-mim {    
     max-width: 40%;
     padding: 0 15px;
 }
 
 .sobre-mim .imagem-sobre-mim .img-box {
-    padding: 15px;
+    display: flex;
+    padding: 2px;
+    position: relative;
+    background: repeating-conic-gradient(from var(--i), #FF2770 0%, #FF2770 5%, transparent 5%, transparent 40%, #FF2770 50%);
+    animation: anime 4s linear infinite;
     border-radius: 5px;
-    text-align: center;
+}
+
+.sobre-mim .imagem-sobre-mim .img-box::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: repeating-conic-gradient(from var(--i), #45F3FF 0%, #45F3FF 5%, transparent 5%, transparent 40%, #45F3FF 50%);
+    animation: anime 4s linear infinite;
+    animation-delay: 1s;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.sobre-mim .imagem-sobre-mim .img-box::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: var(--cor-fundo-escuro);
+    border-radius: 5px;
 }
 
 .sobre-mim .imagem-sobre-mim img {
-    border: 5px solid var(--cor-primaria);
     border-radius: 5px;
+    background-color: var(--cor-fundo-cinza-escuro);
 }
 
 .sobre-mim .informacoes-sobre-mim {    
@@ -22,6 +54,7 @@
 }
 
 .sobre-mim .informacoes-sobre-mim .botoes {
+    display: flex;
     margin-top: 50px;
 }
 
@@ -45,6 +78,10 @@
     .sobre-mim .informacoes-sobre-mim {  
         padding: 0 var(--mobile-padding);
         text-align: center;
+    }
+
+    .sobre-mim .informacoes-sobre-mim .botoes {
+        justify-content: center;
     }
 }
 

@@ -3,14 +3,13 @@
 }
 
 .a-logo {
-    width: 70px;
-    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: repeating-conic-gradient(from var(--i), #0F0 0%, #0F0 5%, transparent 5%, transparent 40%, #0F0 50%);
+    background: repeating-conic-gradient(from var(--i), #45F3FF 0%, #45F3FF 5%, transparent 5%, transparent 40%, #45F3FF 50%);
     animation: anime 4s linear infinite;
+    padding: 1px;
     border-radius: 15px;
 }
 
@@ -19,10 +18,28 @@
     height: 100%;
     position: absolute;
     content: '';
-    background: repeating-conic-gradient(from var(--i), #FF0 0%, #FF0 5%, transparent 5%, transparent 40%, #FF0 50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: repeating-conic-gradient(from var(--i), #FF2770 0%, #FF2770 5%, transparent 5%, transparent 40%, #FF2770 50%);
     animation: anime 4s linear infinite;
     animation-delay: -1s;
     z-index: -1;
+    border-radius: 15px;
+}
+
+.a-logo::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: var(--cor-fundo-escuro);
     border-radius: 15px;
 }
 
@@ -69,7 +86,7 @@
 }
 
 .header nav ul li a {
-    border-radius: 10px 0 10px 0;
+    border-radius: 10px 0;
     padding: 5px 20px;
     background-color: var(--cor-fundo-cinza-escuro);
 }
@@ -150,7 +167,6 @@
         display: flex;
     }
 
-    /* pega todos os itens que após o input e que sao irmaos dele */
     .header nav input:checked ~ ul {
         display: flex;
         flex-direction: column;
