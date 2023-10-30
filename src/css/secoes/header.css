@@ -54,7 +54,7 @@
     line-height: 55px;
     text-align: center;
     text-decoration: underline;
-    transition: 0.2s;
+    transition: 0.3s ease-in-out;
     background-color: var(--cor-fundo-cinza-escuro);
 }
 
@@ -82,13 +82,13 @@
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
 	background-size: 400% 400%;
     animation: gradient 4s linear infinite;
-    transition: .3s;
 }
 
 .header nav ul li a {
     border-radius: 10px 0;
     padding: 5px 20px;
     background-color: var(--cor-fundo-cinza-escuro);
+    transition: .3s ease-in-out;
 }
 
 .header nav ul li a:hover {

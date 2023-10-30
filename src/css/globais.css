@@ -53,19 +53,19 @@ html {
                  0px 0px 75px #0072FF,
                  0px 0px 100px #0072FF;
     animation: animate 3s linear infinite;
-    transition: all 0.3s ase;
+    transition: all 0.3s ease-in-out;
   }
 
   .redes-sociais a:nth-child(2) {
-    animation-delay: .3s;
+    animation-delay: .2s;
   }
 
   .redes-sociais a:nth-child(3) {
-    animation-delay: .7s;
+    animation-delay: .4s;
   }
 
   .redes-sociais a:nth-child(4) {
-    animation-delay: 1s;
+    animation-delay: .6s;
   }
 
   .redes-sociais a i {
