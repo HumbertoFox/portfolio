@@ -78,6 +78,7 @@
     border-radius: 10px;
     letter-spacing: 1px;
     padding: 1px;
+    user-select: none;
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
 	background-size: 400% 400%;
     animation: gradient 4s linear infinite;
