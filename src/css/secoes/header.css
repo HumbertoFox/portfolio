@@ -78,7 +78,6 @@
     border-radius: 10px;
     letter-spacing: 1px;
     padding: 1px;
-    user-select: none;
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
 	background-size: 400% 400%;
     animation: gradient 4s linear infinite;
@@ -192,31 +191,4 @@
         padding: 20px;
         background-color: var(--cor-fundo-escuro);
     }
-}
-
-@property --i {
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
-
-@keyframes anime {
-    0% {
-        --i: 0deg;
-    }
-    100% {
-        --i: 360deg;
-    }
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }

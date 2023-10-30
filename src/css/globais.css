@@ -116,12 +116,3 @@ html {
   .botao:hover {
     color: var(--cor-primaria);
   }
-
-  @keyframes animate {
-    from {
-      filter: hue-rotate(0deg);
-    }
-    to {
-      filter: hue-rotate(360deg);
-    }
-  }

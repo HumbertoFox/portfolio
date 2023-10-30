@@ -5,17 +5,53 @@
     --cor-fundo-escuro: #040203;    
     --cor-fundo-cinza-escuro: #282828;
     --cor-fundo-cinza-claro: #353535;    
-  }
+}
     
-  :root {
+:root {
     --fonte-primaria: 'Poppins', sans serif;
     --fonte-secundaria: 'Raleway', sans serif;
     --fonte-gigante: 4.5rem;
     --fonte-extra-grande: 3rem;
     --fonte-grande: 2.4rem;
     --fonte-normal: 1.6rem;
-  }
+}
   
-  :root {
+:root {
     --mobile-padding: 30px;
+}
+
+@property --i {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes anime {
+  0% {
+      --i: 0deg;
   }
+  100% {
+      --i: 360deg;
+  }
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
