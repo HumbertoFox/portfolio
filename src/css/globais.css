@@ -93,21 +93,20 @@ html {
     text-transform: uppercase;
   }
 
-  .botoes button {
+  .botoes a {
     display: flex;
     border-radius: 10px;
     padding: 1px;
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
 	  background-size: 400% 400%;
     animation: gradient 4s linear infinite;
-    justify-self: center;
   }
   
   .botao {
     position: relative;
-    justify-self: center;
     font-size: var(--fonte-grande);
-    padding: 10px 20px;
+    font-weight: 500;
+    padding: 5px 20px;
     border-radius: 10px 0;
     transition: all .3s ease;
     background-color: var(--cor-fundo-cinza-escuro);
