@@ -185,6 +185,7 @@
         padding: 20px;
         border-radius: 10px;
         opacity: .8;
+        animation: hamburgAnim .3s linear 0s 1 normal forwards;
     }
     
     .header nav ul li a {
