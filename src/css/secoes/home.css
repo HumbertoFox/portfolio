@@ -40,7 +40,7 @@
     margin: auto;
     padding: 2px;
     position: relative;
-    background: repeating-conic-gradient(from var(--i), #FF2770 0%, #FF2770 5%, transparent 5%, transparent 40%, #FF2770 50%);
+    background: repeating-conic-gradient(from var(--i), #FF2770 0%, #FF2770 5%, #FF2770 10%, transparent 5%, transparent 40%, #FF2770 50%);
     animation: anime 4s linear infinite;
     border-radius: 50%;
 }
@@ -54,7 +54,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: repeating-conic-gradient(from var(--i), #45F3FF 0%, #45F3FF 5%, transparent 5%, transparent 40%, #45F3FF 50%);
+    background: repeating-conic-gradient(from var(--i), #45F3FF 0%, #45F3FF 5%, #45F3FF 10%, transparent 5%, transparent 40%, #45F3FF 50%);
     animation: anime 4s linear infinite;
     animation-delay: 1s;
     z-index: -1;
