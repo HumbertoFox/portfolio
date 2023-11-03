@@ -10,6 +10,7 @@
 :root {
     --fonte-primaria: 'Poppins', sans serif;
     --fonte-secundaria: 'Raleway', sans serif;
+    --fonte-terciaria: monospace, sans serif;
     --fonte-gigante: 4.5rem;
     --fonte-extra-grande: 3rem;
     --fonte-grande: 2.4rem;
@@ -67,4 +68,16 @@
 		animation-timing-function: ease-in;
 		transform: translateX(0);
 	}
+}
+
+@keyframes piscar {
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes escrevendo {
+  100% {
+    max-width: 100%;
+  }
 }
