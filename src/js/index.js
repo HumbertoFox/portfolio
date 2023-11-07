@@ -1,7 +1,8 @@
-const selectMenuHamburg = document.querySelectorAll('li a');
+const selectListAli = document.querySelectorAll('li a');
+const selectCheckdBox = document.getElementById('menu-hamburguer');
 
-selectMenuHamburg.forEach(function(itenli){
-    itenli.addEventListener('click', function () {
-        document.getElementById('menu-hamburguer').checked = false;
-    })
-})
+for (let i = 0; i < selectListAli.length; i++) {
+    selectListAli[i].addEventListener('click', function(){
+        selectCheckdBox.checked = false;
+    });
+};
