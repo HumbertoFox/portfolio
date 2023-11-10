@@ -22,4 +22,5 @@
     border-right: 5px solid var(--cor-fundo-cinza-escuro);
     margin: 0 auto 20px auto;
     animation: piscar .8s normal infinite, escrevendo 5s normal infinite;
+    cursor: default;
 }

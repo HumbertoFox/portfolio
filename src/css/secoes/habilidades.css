@@ -1,14 +1,16 @@
-.habilidades .container-habilidades {    
-    text-align: center;    
+.habilidades .container-habilidades {     
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
 }
 
 .habilidades .container-habilidades .informacoes{
     max-width: 350px;
-    padding: 40px 20px;    
+    padding: 40px 20px;
+    cursor: default;
 }
 
 .habilidades .container-habilidades .informacoes p,
@@ -32,7 +34,7 @@
     font-size: var(--fonte-extra-grande);
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--cor-primaria);      
+    color: var(--cor-primaria);
 }
 
 .habilidades .container-habilidades .informacoes p {
