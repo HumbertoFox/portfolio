@@ -6,40 +6,40 @@ html {
     color: var(--cor-branca);
     font-weight: 300;
     scroll-behavior: smooth;
-  }
-  
-  body {
+}
+
+body {
     background-color: var(--cor-fundo-cinza-escuro);
     font-family: var(--fonte-primaria);
     font-size: var(--fonte-normal);
-  }
+}
 
-  .container {
+.container {
     max-width: 1140px;
     margin: auto;
-  }
-  
-  .row {
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .justify-content-between {
-    justify-content: space-between;
-  }
-  
-  .alinhar-itens-no-centro {
-    align-items: center;
-  }
+}
 
-  .redes-sociais {
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.alinhar-itens-no-centro {
+    align-items: center;
+}
+
+.redes-sociais {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-  }
+}
 
-  .redes-sociais a {
+.redes-sociais a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,55 +54,55 @@ html {
                  0px 0px 100px #0072FF;
     animation: animate 3s linear infinite;
     transition: all 0.3s ease-in-out;
-  }
+}
 
-  .redes-sociais a:nth-child(2) {
+.redes-sociais a:nth-child(2) {
     animation-delay: .2s;
-  }
+}
 
-  .redes-sociais a:nth-child(3) {
+.redes-sociais a:nth-child(3) {
     animation-delay: .4s;
-  }
+}
 
-  .redes-sociais a:nth-child(4) {
+.redes-sociais a:nth-child(4) {
     animation-delay: .6s;
-  }
+}
 
-  .redes-sociais a i {
+.redes-sociais a i {
     line-height: 40px;
-  }
-  
-  .redes-sociais a:hover {
-    color: var(--cor-primaria);
-  }
+}
 
-  .section{
+.redes-sociais a:hover {
+    color: var(--cor-primaria);
+}
+
+.section{
     padding: 7rem 0 7rem;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     text-align: center;
     flex: 0 0 100%;
     max-width: 100%;
     padding: 60px 0;
-  }
-  
-  .section-title h2 {
+}
+
+.section-title h2 {
     font-size: var(--fonte-gigante);
     font-weight: 500;
     text-transform: uppercase;
-  }
+}
 
-  .botoes a {
+.botoes a {
     display: flex;
     border-radius: 10px;
     padding: 1px;
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
 	  background-size: 400% 400%;
     animation: gradient 4s linear infinite;
-  }
-  
-  .botao {
+}
+
+.botao {
     position: relative;
     font-size: var(--fonte-grande);
     font-weight: 500;
@@ -110,8 +110,23 @@ html {
     border-radius: 10px 0;
     transition: all .3s ease;
     background-color: var(--cor-fundo-cinza-escuro);
-  }
-  
-  .botao:hover {
+}
+
+.botao:hover {
     color: var(--cor-primaria);
-  }
+}
+
+.btn-top {
+  width: 60px;
+  height: 60px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  opacity: .4;
+}
+
+.btn-top img {
+  width: 100%;
+}
