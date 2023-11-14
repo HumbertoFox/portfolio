@@ -14,8 +14,8 @@ document.onscroll = () => {
 
 function btnOcultar() {
     if(window.scrollY > 900){
-        selectBtnTop.style.display = "flex";
+        selectBtnTop.classList.add('visivel-btn-top');
     } else {
-        selectBtnTop.style.display = "none";
+        selectBtnTop.classList.remove('visivel-btn-top');
     }
 };

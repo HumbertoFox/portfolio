@@ -119,12 +119,20 @@ body {
 .btn-top {
   width: 60px;
   height: 60px;
-  display: none;
+  display: flex;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  border-radius: 50%;
-  opacity: .4;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  transform: translateY(100%);
+}
+
+.visivel-btn-top {
+    visibility: visible;
+    opacity: .5;
+    transform: translateY(0);
 }
 
 .btn-top img {
