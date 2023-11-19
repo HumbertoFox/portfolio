@@ -8,14 +8,9 @@ for (const iterator of selectListAli) {
     });
 };
 
-document.onscroll = () => {
-    btnOcultar();
-}
+document.onscroll = () => btnOcultar();
 
 function btnOcultar() {
-    if(window.scrollY > 900){
-        selectBtnTop.classList.add('visivel-btn-top');
-    } else {
-        selectBtnTop.classList.remove('visivel-btn-top');
-    }
+    (window.scrollY > 900) ? selectBtnTop.classList.add('visivel-btn-top') 
+                           : selectBtnTop.classList.remove('visivel-btn-top');
 };
