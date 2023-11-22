@@ -114,6 +114,7 @@ body {
 
 .botao:hover {
     color: var(--cor-primaria);
+    text-shadow: 0 2px 20px var(--cor-primaria);
 }
 
 .btn-top {

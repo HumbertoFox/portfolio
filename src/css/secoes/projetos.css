@@ -12,12 +12,13 @@
 }
 
 .projetos .container-projetos .projeto {
-    border-radius: 5px;
+    border-radius: 10px;
+    text-align: center;
     transition: all 0.3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
-    position: relative;            
+    position: relative;
 }
 
 .projetos .container-projetos .projeto:hover,
@@ -25,14 +26,22 @@
     opacity: 0.8;
 }
 
+.projetos .container-projetos .projeto:hover {
+    transform: scale(1.1);
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto p {
+    animation: projetAnim .3s linear 0s 1 normal forwards;
+}
+
 .projetos .container-projetos .projeto img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     height: 100%;
 }
 
 .projetos .container-projetos .projeto .informacoes-projeto {
-    padding: 20px 20px;    
+    padding: 20px;    
     background-color: var(--cor-fundo-escuro);
     position: absolute;
     top: 0;
@@ -40,8 +49,12 @@
     height: 100%;
     opacity: 0;    
     transition: all .3s ease;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.projetos .container-projetos .projeto .informacoes-projeto p:nth-child(1) {
+    text-align: justify;
 }
 
 .projetos .container-projetos .projeto .informacoes-projeto p:nth-child(2) {
@@ -57,8 +70,6 @@
     opacity: 0.7;
     background-color: var(--cor-fundo-escuro);
     width: 100%;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px;
     bottom: 0;
 }

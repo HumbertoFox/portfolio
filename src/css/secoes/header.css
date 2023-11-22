@@ -61,6 +61,7 @@
 .header a:hover .logo {
     color: var(--cor-primaria);
     border: 2px solid var(--cor-primaria);
+    box-shadow: 0 2px 20px var(--cor-primaria);
 }
 
 .header nav ul {
@@ -93,6 +94,7 @@
 
 .header nav ul li a:hover {
     color: var(--cor-primaria);
+    text-shadow: 0 2px 20px var(--cor-primaria);
 }
 
 .header .menu{
