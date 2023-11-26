@@ -99,7 +99,7 @@ body {
     border-radius: 10px;
     padding: 1px;
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
-	  background-size: 400% 400%;
+	background-size: 400% 400%;
     animation: gradient 4s linear infinite;
 }
 
@@ -107,15 +107,15 @@ body {
     position: relative;
     font-size: var(--fonte-grande);
     font-weight: 500;
+    background-color: var(--cor-fundo-cinza-escuro);
     padding: 5px 20px;
     border-radius: 10px 0;
     transition: all .3s ease;
-    background-color: var(--cor-fundo-cinza-escuro);
 }
 
 .botao:hover {
     color: var(--cor-primaria);
-    text-shadow: 0 2px 20px var(--cor-primaria);
+    text-shadow: 0 0 20px var(--cor-primaria);
 }
 
 .btn-top {
@@ -129,6 +129,7 @@ body {
   opacity: 0;
   transition: .3s;
   transform: translateY(100%);
+  border-radius: 50%;
 }
 
 .visivel-btn-top {
