@@ -173,6 +173,11 @@
     .header nav input:checked ~ ul {
         display: flex;
         flex-direction: column;
+        background-color: var(--cor-fundo-escuro);
+        opacity: .8;
+        padding: 20px;
+        border-radius: 10px;
+        animation: hamburgInAnim .4s linear 0s 1 normal forwards;
     }
 
     .header nav {
@@ -184,11 +189,6 @@
 
    .header nav ul {
         display: none;
-        background-color: var(--cor-fundo-escuro);
-        opacity: .8;
-        padding: 20px;
-        border-radius: 10px;
-        animation: hamburgAnim .3s linear 0s 1 normal forwards;
     }
     
     .header nav ul li a {
