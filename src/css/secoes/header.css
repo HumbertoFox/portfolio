@@ -1,5 +1,6 @@
 .header {
     padding: 30px 15px;
+    animation: headerAnim 2s ease 0s 1 normal forwards;
 }
 
 .a-logo {
@@ -44,18 +45,18 @@
 }
 
 .header .logo {
-    font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-extra-grande);
-    color: var(--cor-branca);
-    border: 2px solid var(--cor-branca);
-    border-radius: 15px;
     width: 65px;
     height: 65px;
-    line-height: 55px;
-    text-align: center;
-    text-decoration: underline;
-    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-quaternaria);
+    font-size: var(--fonte-extra-grande);
+    color: var(--cor-branca);
     background-color: var(--cor-fundo-cinza-escuro);
+    transition: 0.3s ease-in-out;
+    border: 2px solid var(--cor-branca);
+    border-radius: 15px;
 }
 
 .header a:hover .logo {
@@ -184,9 +185,9 @@
    .header nav ul {
         display: none;
         background-color: var(--cor-fundo-escuro);
+        opacity: .8;
         padding: 20px;
         border-radius: 10px;
-        opacity: .8;
         animation: hamburgAnim .3s linear 0s 1 normal forwards;
     }
     

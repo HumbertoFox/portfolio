@@ -29,6 +29,7 @@
 
 .habilidades .container-habilidades .informacoes:hover h3 {
     color: var(--cor-branca);
+    transform: scale(1.1);
 }
 
 .habilidades .container-habilidades .informacoes h3 {

@@ -11,6 +11,7 @@
     --fonte-primaria: 'Poppins', sans serif;
     --fonte-secundaria: 'Raleway', sans serif;
     --fonte-terciaria: monospace, sans serif;
+	--fonte-quaternaria: 'Pinyon Script', cursive;
     --fonte-gigante: 4.5rem;
     --fonte-extra-grande: 3rem;
     --fonte-grande: 2.4rem;
@@ -25,6 +26,43 @@
   syntax: '<angle>';
   inherits: false;
   initial-value: 0deg;
+}
+
+@keyframes headerAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
 }
 
 @keyframes anime {
@@ -93,4 +131,15 @@
 		animation-timing-function: ease-in;
 		transform: translatey(0);
 	}
+}
+
+@keyframes tiltAnime {
+  0% {
+    transform: rotateY(-30deg) translateY(300px) skewY(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
 }
