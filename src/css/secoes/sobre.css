@@ -2,7 +2,7 @@
     min-height: 82vh;
 }
 
-.sobre-mim .imagem-sobre-mim {    
+.sobre-mim .imagem-sobre-mim {
     max-width: 40%;
     padding: 0 15px;
 }
@@ -51,9 +51,9 @@
     background-color: var(--cor-fundo-cinza-escuro);
 }
 
-.sobre-mim .informacoes-sobre-mim {    
+.sobre-mim .informacoes-sobre-mim {
     max-width: 60%;
-    padding: 0 25px;   
+    padding: 0 25px;
     align-self: center; 
 }
 

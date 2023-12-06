@@ -6,7 +6,11 @@
 .home .texto-home {
     letter-spacing: 2px;
     cursor: default;
-    animation: tiltAnime 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rightAnime 0.6s ease-in-out both;
+}
+
+.home .img-home {
+    animation: leftAnime .6s ease-in-out both;
 }
 
 .home .texto-home .redes-sociais {

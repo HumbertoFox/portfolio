@@ -98,14 +98,14 @@
     text-shadow: 0 0 20px var(--cor-primaria);
 }
 
-.header .menu{
+.header .menu {
     display: none;    
     width: 60px;
     height: 60px;        
     align-self: flex-end;
 }
 
-.header nav label{
+.header nav label {
     display: flex;
     flex-direction: column;
     cursor: pointer;

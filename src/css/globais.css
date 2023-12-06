@@ -78,7 +78,7 @@ body {
     color: var(--cor-primaria);
 }
 
-.section{
+.section {
     padding-top: 7rem;
 }
 
@@ -142,4 +142,30 @@ body {
 
 .btn-top img {
   width: 100%;
+}
+
+[data-animation] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-animation = "up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-animation = "right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animation = "down"] {
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-animation = "left"] {
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-animation].animation {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }

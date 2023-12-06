@@ -142,13 +142,24 @@
 	}
 }
 
-@keyframes tiltAnime {
+@keyframes rightAnime {
   0% {
-    transform: rotateY(-30deg) translateY(300px) skewY(30deg);
+    transform: translate3d(50px, 0, 0);
     opacity: 0;
   }
   100% {
-    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
+}
+
+@keyframes leftAnime {
+	0% {
+	  transform: translate3d(-100%, 0, 0);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translate3d(0, 0, 0);
+	  opacity: 1;
+	}
 }

@@ -1,4 +1,8 @@
-.habilidades .container-habilidades {     
+.habilidades {
+    min-height: 82vh;
+}
+
+.habilidades .container-habilidades {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -7,7 +11,7 @@
     gap: 10px;
 }
 
-.habilidades .container-habilidades .informacoes{
+.habilidades .container-habilidades .informacoes {
     max-width: 350px;
     padding: 40px 20px;
     cursor: default;
@@ -15,7 +19,7 @@
 
 .habilidades .container-habilidades .informacoes p,
 .habilidades .container-habilidades .informacoes h3,
-.habilidades .container-habilidades .informacoes .logo i{
+.habilidades .container-habilidades .informacoes .logo i {
     transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -23,7 +27,7 @@
 }
 
 .habilidades .container-habilidades .informacoes:hover p,
-.habilidades .container-habilidades .informacoes:hover .logo i{
+.habilidades .container-habilidades .informacoes:hover .logo i {
     color: var(--cor-primaria);
 }
 
