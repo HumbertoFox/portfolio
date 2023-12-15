@@ -21,10 +21,9 @@
     height: 100%;
     position: absolute;
     content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
     background: repeating-conic-gradient(from var(--i), #45F3FF 0%, #45F3FF 5%, #45F3FF 10%, transparent 5%, transparent 40%, #45F3FF 50%);
     animation: anime 4s linear infinite;
     animation-delay: 1s;
@@ -37,10 +36,9 @@
     height: 100%;
     position: absolute;
     content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
     z-index: -2;
     background-color: var(--cor-fundo-escuro);
     border-radius: 5px;
