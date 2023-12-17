@@ -9,10 +9,9 @@ for (const iterator of selectListAli) {
     });
 };
 
-document.onscroll = () => btnOcultar();
-
 function btnOcultar() {
-    (window.scrollY > 900) ? selectBtnTop.classList.add('visivel-btn-top') 
+
+    (window.scrollY > 800) ? selectBtnTop.classList.add('visivel-btn-top') 
                            : selectBtnTop.classList.remove('visivel-btn-top');
 };
 
@@ -20,14 +19,12 @@ const animatinScroll = () => {
     const windowTop = window.pageYOffset + window.innerHeight * .50;
 
     selectAnimations.forEach((animation) => {
-        if (windowTop > animation.offsetTop) {
-            animation.classList.add("animation");
-        } else {
-            animation.classList.remove("animation");
-        };
+        (windowTop > animation.offsetTop) ? animation.classList.add("animation")
+                                          : animation.classList.remove("animation");
     });
 };
 
 window.addEventListener("scroll", () => {
     animatinScroll();
+    btnOcultar();
 });

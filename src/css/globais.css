@@ -140,8 +140,8 @@ body {
     transform: translateY(0);
 }
 
-.btn-top img {
-  width: 100%;
+.btn-top:hover {
+    filter: drop-shadow(0 0 20px var(--cor-primaria));
 }
 
 [data-animation] {

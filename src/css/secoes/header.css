@@ -58,6 +58,7 @@
         color: var(--cor-primaria);
         border: 2px solid var(--cor-primaria);
         box-shadow: 0 0 20px var(--cor-primaria);
+        text-shadow: 0 0 10px var(--cor-branca);
     }
 
     .header nav ul {
