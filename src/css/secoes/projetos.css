@@ -101,9 +101,11 @@
 
     .projetos .container-projetos .projeto {
         transform: scale(1.0);
+        box-shadow: 10px 10px 10px hsla(156.9,48%,50.2%, .6);
     }
 
     .projetos .container-projetos .projeto:hover {
         translate: 0 0 0;
+        box-shadow: 10px 10px 10px hsla(20.3, 98.2%, 56.3%, .6);
     }
 }
