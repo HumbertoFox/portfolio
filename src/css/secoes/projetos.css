@@ -3,72 +3,128 @@
 }
 
 .projetos .container-projetos {
-    position: relative;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, 550px);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(300px, 500px);
+    grid-gap: 60px 20px;
     margin: 10rem auto;
 }
 
-.projetos .container-projetos .projeto {
+.projeto_card {
     position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.projeto_card:hover .projeto_frente {
+    transform: rotateY(-180deg);
+}
+
+.projeto_card:hover .projeto_traz {
+    transform: rotateY(0deg);
+}
+
+.projeto_card .projeto_frente,
+.projeto_card .projeto_traz {
+    width: 300px;
+    min-height: 500px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    transition: all 0.3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-.projetos .container-projetos .projeto:hover,
-.projetos .container-projetos .projeto:hover .informacoes-projeto {
-    opacity: 0.8;
+.projeto_card:nth-child(1) .projeto_frente,
+.projeto_card:nth-child(1) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/25a7b9e4-c1d5-4064-b377-564ffc1735cc);
 }
 
-.projetos .container-projetos .projeto:hover .informacoes-projeto p {
-    animation: projetAnim .3s linear 0s 1 normal forwards;
+.projeto_card:nth-child(2) .projeto_frente,
+.projeto_card:nth-child(2) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/b10ae5aa-95eb-4a9f-9f8f-f7e9f7de38da);
 }
 
-.projetos .container-projetos .projeto img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 100%;
+.projeto_card:nth-child(3) .projeto_frente,
+.projeto_card:nth-child(3) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/7fc3d047-a638-4e1e-9e43-8dd70993754b);
 }
 
-.projetos .container-projetos .projeto .informacoes-projeto {
-    padding: 20px;    
-    background-color: var(--cor-fundo-escuro);
+.projeto_card:nth-child(4) .projeto_frente,
+.projeto_card:nth-child(4) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/87384fc3-464b-4205-9936-5837aebc9264);
+}
+
+.projeto_card .projeto_frente {
+    transform: rotateY(0deg);
+}
+
+.projeto_card .projeto_traz {
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;    
-    transition: all .3s ease;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    left: 0;
+    transform: rotateY(180deg);
 }
 
-.projetos .container-projetos .projeto .informacoes-projeto p:nth-child(1) {
+.projeto_card .projeto_frente::after,
+.projeto_card .projeto_traz::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #0A0A0A;
+    opacity: 0.6;
+}
+
+.projeto_card .projeto_frente .interno,
+.projeto_card .projeto_traz .interno {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    z-index: 2;
+    padding: 40px;
+}
+
+.interno .icone {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.interno i {
+    font-size: 80px;
+}
+
+.interno h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cor-branca);
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.interno .informacoes-projeto p {
+    color: var(--cor-branca);
+    line-height: 28px;
+}
+
+.interno .informacoes-projeto p:nth-child(1) {
     text-align: justify;
 }
 
-.projetos .container-projetos .projeto .informacoes-projeto p:nth-child(2) {
+.interno .informacoes-projeto p:nth-child(2) {
     font-weight: 500;
-    margin-top: 10px;
     font-size: 1.4rem;
-}
-
-.projetos .container-projetos .projeto h3 {
-    font-size: 2rem;
-    font-weight: 500;    
-    position: absolute;      
-    opacity: 0.7;
-    background-color: var(--cor-fundo-escuro);
-    width: 100%;
-    padding: 10px;
-    bottom: 0;
+    margin-top: 10px;
 }
 
 @media(max-width: 1280px) { 

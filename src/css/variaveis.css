@@ -129,19 +129,6 @@
   }
 }
 
-@keyframes projetAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translatey(200px);
-	}
-
-	100% {
-		animation-timing-function: ease-in;
-		transform: translatey(0);
-	}
-}
-
 @keyframes rightAnime {
   0% {
     transform: translate3d(50px, 0, 0);
