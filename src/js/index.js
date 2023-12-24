@@ -15,7 +15,7 @@ function btnOcultar() {
         selectBtnTop.classList.add('visivel-btn-top');
         setTimeout(() => {
             selectBtnTop.classList.remove('visivel-btn-top');
-        }, 1000);
+        }, 2000);
     } else {
         selectBtnTop.classList.remove('visivel-btn-top');
     };
