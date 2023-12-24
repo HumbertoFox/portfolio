@@ -11,8 +11,14 @@ for (const iterator of selectListAli) {
 
 function btnOcultar() {
 
-    (window.scrollY > 800) ? selectBtnTop.classList.add('visivel-btn-top') 
-                           : selectBtnTop.classList.remove('visivel-btn-top');
+    if (window.scrollY > 800) {
+        selectBtnTop.classList.add('visivel-btn-top');
+        setTimeout(() => {
+            selectBtnTop.classList.remove('visivel-btn-top');
+        }, 1000);
+    } else {
+        selectBtnTop.classList.remove('visivel-btn-top');
+    };
 };
 
 const animatinScroll = () => {
@@ -24,7 +30,10 @@ const animatinScroll = () => {
     });
 };
 
+document.onscroll = () => {
+    btnOcultar();
+};
+
 window.addEventListener("scroll", () => {
     animatinScroll();
-    btnOcultar();
 });
