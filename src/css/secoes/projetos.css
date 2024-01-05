@@ -59,6 +59,26 @@
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/87384fc3-464b-4205-9936-5837aebc9264);
 }
 
+.projeto_card:nth-child(5) .projeto_frente,
+.projeto_card:nth-child(5) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/c222cdff-8389-4274-b357-7f2f76db7050);
+}
+
+.projeto_card:nth-child(6) .projeto_frente,
+.projeto_card:nth-child(6) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/6becd292-43bf-4b5c-8133-3f5965b07dea);
+}
+
+.projeto_card:nth-child(7) .projeto_frente,
+.projeto_card:nth-child(7) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/cb1e5797-075f-45a6-a65e-242ae2dcb47c);
+}
+
+.projeto_card:nth-child(8) .projeto_frente,
+.projeto_card:nth-child(8) .projeto_traz {
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/32f7a3a5-0a45-4d6e-9478-e8cd7e4f9056);
+}
+
 .projeto_card .projeto_frente {
     transform: rotateY(0deg);
 }
