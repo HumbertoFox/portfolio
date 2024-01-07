@@ -97,23 +97,12 @@
 
 @keyframes hamburgInAnim {
 	0% {
-		transform: translateX(250px);
+		transform: translateX(-250px);
 		opacity: 0;
 	  }
 	  100% {
 		transform: translateX(0);
 		opacity: 1;
-	}
-}
-
-@keyframes hamburgOutAnim {
-	0% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(250px);
-		opacity: 0;
 	}
 }
 	

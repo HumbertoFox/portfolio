@@ -98,7 +98,7 @@
         display: none;    
         width: 60px;
         height: 60px;        
-        align-self: flex-end;
+        align-self: flex-start;
     }
 
     .header nav label {
@@ -142,16 +142,16 @@
     }
 
     .header input:checked ~ label .hamburguer {
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
     }
 
     .header input:checked ~ label .hamburguer:before {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         top: 0;
     }
 
     .header input:checked ~ label .hamburguer:after {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
         bottom: 0;
     }
 
@@ -173,17 +173,17 @@
             opacity: .8;
             padding: 20px;
             border-radius: 10px;
-            animation: hamburgInAnim .4s linear 0s 1 normal forwards;
+            animation: hamburgInAnim .4s linear forwards;
         }
 
         .header nav {
             position: absolute;
             top: 30px;
-            right: 20px;
+            left: 20px;
             z-index: 1;
         }
 
-    .header nav ul {
+         .header nav ul {
             display: none;
         }
         
