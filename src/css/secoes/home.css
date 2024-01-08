@@ -25,7 +25,8 @@
 }
 
 @media(max-width: 1280px) {
-    .home .texto-home, .home .img-home {
+    .home .texto-home,
+    .home .img-home {
         flex: 0 0 1000%;
         max-width: 100%;
         text-align: center;
