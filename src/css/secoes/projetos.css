@@ -37,6 +37,7 @@
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    border-radius: 10px;
 }
 
 .projeto_card:nth-child(1) .projeto_frente,
@@ -100,6 +101,7 @@
     left: 0;
     background-color: #0A0A0A;
     opacity: 0.6;
+    border-radius: 10px;
 }
 
 .projeto_card .projeto_frente .interno,
