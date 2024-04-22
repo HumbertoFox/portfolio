@@ -31,8 +31,8 @@ const animatinScroll = () => {
                                           : animation.classList.remove("animation");
     });
 
-    (selectSectionTitle.classList.contains("animation") == false) ? selectHome.classList.add("animation")
-                                                                  : selectHome.classList.remove("animation");
+    (selectSectionTitle.classList.contains("animation") == true) ? selectHome.classList.remove("animation")
+                                                                  : selectHome.classList.add("animation");
 };
 
 document.onscroll = () => {
