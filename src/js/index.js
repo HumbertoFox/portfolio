@@ -1,6 +1,8 @@
 const selectListAli = document.querySelectorAll('li a');
 const selectCheckdBox = document.getElementById('menu-hamburguer');
 const selectBtnTop = document.querySelector('.btn-top');
+const selectHome = document.getElementById("home")
+const selectSectionTitle = document.getElementById("title");
 const selectAnimations = document.querySelectorAll("[data-animation]");
 
 for (const iterator of selectListAli) {
@@ -28,6 +30,9 @@ const animatinScroll = () => {
         (windowTop > animation.offsetTop) ? animation.classList.add("animation")
                                           : animation.classList.remove("animation");
     });
+
+    (selectSectionTitle.classList.contains("animation") == false) ? selectHome.classList.add("animation")
+                                                                  : selectHome.classList.remove("animation");
 };
 
 document.onscroll = () => {
