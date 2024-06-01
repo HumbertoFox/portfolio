@@ -36,7 +36,7 @@
     text-align: center;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1) .3s;
     border-radius: 10px;
 }
 
@@ -67,7 +67,7 @@
 
 .projeto_card:nth-child(6) .projeto_frente,
 .projeto_card:nth-child(6) .projeto_traz {
-    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/6becd292-43bf-4b5c-8133-3f5965b07dea);
+    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/2f979e28-7c71-4aa0-a2fc-060b0dbddf3c);
 }
 
 .projeto_card:nth-child(7) .projeto_frente,
