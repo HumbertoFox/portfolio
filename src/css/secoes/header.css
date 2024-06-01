@@ -172,7 +172,7 @@
             opacity: .8;
             padding: 20px;
             border-radius: 10px;
-            animation: hamburgInAnim .4s linear forwards;
+            animation: hamburgInAnim .6s linear forwards;
         }
 
         .header nav {

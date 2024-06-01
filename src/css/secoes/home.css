@@ -1,7 +1,7 @@
 .home .full-screen {
     padding: 30px 0;
     min-height: 82vh;
-    transition: .3s ease-out;
+    transition: .3s linear;
 }
 
 .home .texto-home {
