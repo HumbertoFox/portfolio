@@ -97,7 +97,7 @@
 
 @keyframes hamburgInAnim {
 	0% {
-		transform: translateX(-250px);
+		transform: translateY(-250px);
 		opacity: 0;
 	  }
 	  100% {

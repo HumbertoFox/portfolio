@@ -1,6 +1,7 @@
 .home .full-screen {
     padding: 30px 0;
     min-height: 82vh;
+    transition: .3s ease-out;
 }
 
 .home .texto-home {
@@ -105,10 +106,4 @@
     font-size: var(--fonte-grande);
     letter-spacing: 2px;
     margin-bottom: 30px;
-}
-
-@media(max-width: 900px) {
-    .home {
-        margin-top: 23rem;
-    }
 }

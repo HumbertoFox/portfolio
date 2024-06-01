@@ -76,7 +76,6 @@
         border-radius: 10px;
         letter-spacing: 1px;
         padding: 1px;
-        user-select: none;
         background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
         background-size: 400% 400%;
         animation: gradient 4s linear infinite;
@@ -142,16 +141,16 @@
     }
 
     .header input:checked ~ label .hamburguer {
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
     }
 
     .header input:checked ~ label .hamburguer:before {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
         top: 0;
     }
 
     .header input:checked ~ label .hamburguer:after {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
         bottom: 0;
     }
 
