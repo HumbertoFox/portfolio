@@ -45,17 +45,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
-    font-size: 2.5rem;
-    background: #18191F;
-    border-radius: 10px;
+    font-size: 4.0rem;
     text-shadow: 0px 0px 25px #0072FF,
-                 0px 0px 50px #0072FF,
-                 0px 0px 75px #0072FF,
-                 0px 0px 100px #0072FF;
-    animation: animate 3s linear infinite;
-    transition: all 0.3s ease-in-out;
+        0px 0px 50px #0072FF,
+        0px 0px 75px #0072FF,
+        0px 0px 100px #0072FF;
+    animation: animate 4s linear infinite;
+    transition: all 0.4s ease-in-out;
 }
 
 .redes-sociais a:nth-child(2) {
@@ -71,22 +67,23 @@ body {
 }
 
 .redes-sociais a i {
-    line-height: 40px;
+    color: #00F;
+    transition: all .4s ease-in-out;
 }
 
-.redes-sociais a:hover {
-    color: var(--cor-primaria);
+.redes-sociais a:hover i {
+    color: #FFF;
 }
 
 .section {
-    padding-top: 7rem;
+    padding-top: 1rem;
 }
 
 .section-title {
     text-align: center;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 30px 0;
+    padding-bottom: 30px;
     cursor: default;
 }
 
@@ -101,7 +98,7 @@ body {
     border-radius: 10px;
     padding: 1px;
     background: linear-gradient(45deg, #FFF, #00F, #0F0, #F00, #FFF);
-	background-size: 400% 400%;
+    background-size: 400% 400%;
     animation: gradient 4s linear infinite;
 }
 
@@ -121,17 +118,17 @@ body {
 }
 
 .btn-top {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  visibility: hidden;
-  opacity: 0;
-  transition: .3s;
-  transform: translateY(100%);
-  border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    transform: translateY(100%);
+    border-radius: 50%;
 }
 
 .visivel-btn-top {
@@ -149,19 +146,19 @@ body {
     transition: 1s;
 }
 
-[data-animation = "up"] {
+[data-animation="up"] {
     transform: translate3d(0, 100%, 0);
 }
 
-[data-animation = "right"] {
+[data-animation="right"] {
     transform: translate3d(100px, 0, 0);
 }
 
-[data-animation = "down"] {
+[data-animation="down"] {
     transform: translate3d(0, -100%, 0);
 }
 
-[data-animation = "left"] {
+[data-animation="left"] {
     transform: translate3d(-100%, 0, 0);
 }
 
@@ -177,7 +174,7 @@ body {
 }
 
 @media(max-width: 794px) {
-    [data-animation = "right"] {
+    [data-animation="right"] {
         transform: translate3d(-100%, 0, 0);
     }
 }

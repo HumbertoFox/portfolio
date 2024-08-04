@@ -1,10 +1,10 @@
 :root {
-    --cor-primaria: #43bd8e;
-    --cor-secundaria: #FD6C22;    
+    --cor-primaria: #43BD8E;
+    --cor-secundaria: #FD6C22;
     --cor-branca: #FFF;
-    --cor-fundo-escuro: #040203;    
+    --cor-fundo-escuro: #040203;
     --cor-fundo-cinza-escuro: #282828;
-    --cor-fundo-cinza-claro: #353535;    
+    --cor-fundo-cinza-claro: #353535;
 }
     
 :root {
@@ -20,12 +20,6 @@
   
 :root {
     --mobile-padding: 30px;
-}
-
-@property --i {
-  syntax: '<angle>';
-  inherits: false;
-  initial-value: 0deg;
 }
 
 @keyframes headerAnim {
@@ -67,10 +61,10 @@
 
 @keyframes anime {
   0% {
-      --i: 0deg;
+      transform: rotate(0deg);
   }
   100% {
-      --i: 360deg;
+      transform: rotate(360deg);
   }
 }
 

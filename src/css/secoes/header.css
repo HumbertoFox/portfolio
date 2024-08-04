@@ -1,42 +1,37 @@
     .header {
-        padding: 30px 15px;
+        padding: 15px;
         animation: headerAnim 2s ease 0s 1 normal forwards;
     }
 
     .a-logo {
         display: flex;
         position: relative;
-        background: repeating-conic-gradient(from var(--i), #45F3FF 0%, #45F3FF 5%, #45F3FF 10%, transparent 5%, transparent 40%, #45F3FF 50%);
-        animation: anime 4s linear infinite;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-fundo-escuro);
         padding: 1px;
         border-radius: 15px;
+        overflow: hidden;
     }
 
     .a-logo::before {
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 130%;
         position: absolute;
         content: '';
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        background: repeating-conic-gradient(from var(--i), #FF2770 0%, #FF2770 5%, #FF2770 10%, transparent 5%, transparent 40%, #FF2770 50%);
+        background: repeating-conic-gradient(#FF2770 0%, #FF2770 5%, #FF2770 10%, transparent 5%, transparent 40%, #FF2770 50%);
         animation: anime 4s linear infinite;
         animation-delay: -1s;
-        z-index: -1;
         border-radius: 15px;
     }
 
     .a-logo::after {
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 130%;
         position: absolute;
         content: '';
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        z-index: -2;
-        background-color: var(--cor-fundo-escuro);
+        background: repeating-conic-gradient(#45F3FF 0%, #45F3FF 5%, #45F3FF 10%, transparent 5%, transparent 40%, #45F3FF 50%);
+        animation: anime 4s linear infinite;
         border-radius: 15px;
     }
 
@@ -50,15 +45,14 @@
         font-size: var(--fonte-extra-grande);
         color: var(--cor-branca);
         background-color: var(--cor-fundo-cinza-escuro);
-        transition: 0.3s ease-in-out;
+        transition: all .4s ease-in-out;
         border-radius: 15px;
+        z-index: 1;
     }
 
-    .header a:hover .logo {
-        color: var(--cor-primaria);
-        border: 2px solid var(--cor-primaria);
-        box-shadow: 0 0 20px var(--cor-primaria);
-        text-shadow: 0 0 10px var(--cor-branca);
+    .a-logo:hover::after,
+    .a-logo:hover::before {
+        background: repeating-conic-gradient(#FFD700 0%, #FFD700 5%, #FFD700 10%, transparent 5%, transparent 40%, #FFD700 50%);
     }
 
     .header nav ul {
@@ -94,9 +88,9 @@
     }
 
     .header .menu {
-        display: none;    
+        display: none;
         width: 60px;
-        height: 60px;        
+        height: 60px;
         align-self: flex-start;
     }
 
@@ -105,7 +99,7 @@
         flex-direction: column;
         cursor: pointer;
     }
-    
+
     .header .hamburguer {
         position: relative;
         display: block;
@@ -140,21 +134,21 @@
         display: none;
     }
 
-    .header input:checked ~ label .hamburguer {
+    .header input:checked~label .hamburguer {
         transform: rotate(45deg);
     }
 
-    .header input:checked ~ label .hamburguer:before {
+    .header input:checked~label .hamburguer:before {
         transform: rotate(90deg);
         top: 0;
     }
 
-    .header input:checked ~ label .hamburguer:after {
+    .header input:checked~label .hamburguer:after {
         transform: rotate(90deg);
         bottom: 0;
     }
 
-    @media(max-width: 1280px) { 
+    @media(max-width: 1280px) {
         .header {
             padding: var(--mobile-padding);
         }
@@ -165,7 +159,7 @@
             display: flex;
         }
 
-        .header nav input:checked ~ ul {
+        .header nav input:checked~ul {
             display: flex;
             flex-direction: column;
             background-color: var(--cor-fundo-escuro);
@@ -181,12 +175,12 @@
             left: 20px;
         }
 
-         .header nav ul {
+        .header nav ul {
             display: none;
         }
-        
+
         .header nav ul li a {
-            width: 100%;                
+            width: 100%;
             padding: 20px;
             background-color: var(--cor-fundo-escuro);
         }

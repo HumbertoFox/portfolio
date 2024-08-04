@@ -1,8 +1,8 @@
 .habilidades {
-    min-height: 82vh;
+    min-height: 100vh;
 }
 
-.habilidades .container-habilidades {
+.container-habilidades {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -11,43 +11,43 @@
     gap: 10px;
 }
 
-.habilidades .container-habilidades .informacoes {
+.container-habilidades .informacoes {
     max-width: 350px;
     padding: 40px 20px;
     cursor: default;
 }
 
-.habilidades .container-habilidades .informacoes p,
-.habilidades .container-habilidades .informacoes h3,
-.habilidades .container-habilidades .informacoes .logo i {
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+.container-habilidades .informacoes p,
+.container-habilidades .informacoes h3,
+.container-habilidades .informacoes i {
+    transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
-.habilidades .container-habilidades .informacoes:hover p,
-.habilidades .container-habilidades .informacoes:hover .logo i {
-    color: var(--cor-primaria);
-}
-
-.habilidades .container-habilidades .informacoes:hover h3 {
-    color: var(--cor-branca);
-    transform: scale(1.1);
-}
-
-.habilidades .container-habilidades .informacoes h3 {
+.container-habilidades .informacoes h3 {
     font-size: var(--fonte-extra-grande);
     font-weight: 500;
     margin-bottom: 20px;
     color: var(--cor-primaria);
 }
 
-.habilidades .container-habilidades .informacoes p {
+.container-habilidades .informacoes p {
     font-size: 1.8rem;
     font-family: var(--fonte-secundaria);
 }
 
-.habilidades .container-habilidades .informacoes .logo i {
+.container-habilidades .informacoes i {
     font-size: 8rem;
+}
+
+.container-habilidades .informacoes:hover p,
+.container-habilidades .informacoes:hover i {
+    color: var(--cor-primaria);
+}
+
+.container-habilidades .informacoes:hover h3 {
+    color: var(--cor-branca);
+    transform: scale(1.1);
 }
