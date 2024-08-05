@@ -40,48 +40,41 @@
     border-radius: 10px;
 }
 
-.projeto_card:nth-child(1) .projeto_frente,
 .projeto_card:nth-child(1) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/cc725cd4-c8d2-4192-9abd-ffc4cf434588);
 }
 
-.projeto_card:nth-child(2) .projeto_frente,
 .projeto_card:nth-child(2) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/b10ae5aa-95eb-4a9f-9f8f-f7e9f7de38da);
 }
 
-.projeto_card:nth-child(3) .projeto_frente,
 .projeto_card:nth-child(3) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/7fc3d047-a638-4e1e-9e43-8dd70993754b);
 }
 
-.projeto_card:nth-child(4) .projeto_frente,
 .projeto_card:nth-child(4) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/87384fc3-464b-4205-9936-5837aebc9264);
 }
 
-.projeto_card:nth-child(5) .projeto_frente,
 .projeto_card:nth-child(5) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/f7507de6-d7f1-4300-9ca9-7440ed72a1a7);
 }
 
-.projeto_card:nth-child(6) .projeto_frente,
 .projeto_card:nth-child(6) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/2f979e28-7c71-4aa0-a2fc-060b0dbddf3c);
 }
 
-.projeto_card:nth-child(7) .projeto_frente,
 .projeto_card:nth-child(7) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/cb1e5797-075f-45a6-a65e-242ae2dcb47c);
 }
 
-.projeto_card:nth-child(8) .projeto_frente,
 .projeto_card:nth-child(8) .projeto_traz {
     background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/32f7a3a5-0a45-4d6e-9478-e8cd7e4f9056);
 }
 
 .projeto_card .projeto_frente {
     transform: rotateY(0deg);
+    background-image: url(../../imagens/background.png);
 }
 
 .projeto_card .projeto_traz {
