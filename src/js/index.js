@@ -1,7 +1,7 @@
 const selectListAli = document.querySelectorAll('li a');
 const selectCheckdBox = document.getElementById('menu-hamburguer');
 const selectBtnTop = document.querySelector('.btn-top');
-const selectHome = document.getElementById("home")
+const selectHome = document.getElementById("home");
 const selectSectionTitle = document.getElementById("title");
 const selectAnimations = document.querySelectorAll("[data-animation]");
 
