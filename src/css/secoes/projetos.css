@@ -49,7 +49,7 @@
 }
 
 .projeto_card:nth-child(3) .projeto_traz {
-    background-image: url(https://github.com/HumbertoFox/repository/assets/126817628/7fc3d047-a638-4e1e-9e43-8dd70993754b);
+    background-image: url(https://github.com/user-attachments/assets/4e4d7253-5afb-4f18-9719-a4f17c019abc);
 }
 
 .projeto_card:nth-child(4) .projeto_traz {
@@ -140,6 +140,10 @@
     font-weight: 500;
     font-size: 1.4rem;
     margin-top: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 @media(max-width: 1280px) { 
